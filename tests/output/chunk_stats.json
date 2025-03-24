@@ -1,0 +1,26 @@
+{
+  "total_chunks": 3423,
+  "total_tokens": 582367,
+  "token_count": {
+    "min": 1,
+    "max": 1224,
+    "avg": 170.1335086181712,
+    "median": 61,
+    "stdev": 229.60461911343094
+  },
+  "content_length": {
+    "min": 5,
+    "max": 4896,
+    "avg": 682.0654396728016,
+    "median": 247,
+    "stdev": 918.3905686097036
+  },
+  "heading_levels": {
+    "1": 1,
+    "2": 770,
+    "3": 2652
+  },
+  "chunk_types": {
+    "main_chunk": 3423
+  }
+}

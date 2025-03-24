@@ -31,9 +31,17 @@ def run_project():
         # Set parameters for chunking
         max_chunk_size = 1024  # ~1024 tokens max per chunk
         overlap_size = 200     # ~200 tokens overlap
+        min_chunk_size = 100   # ~100 tokens minimum per chunk
         output_format = "jsonl"  # JSONL format for chunks
         
-        if chunk_markdown_file(md_path, chunks_path, max_chunk_size, overlap_size, output_format):
+        if chunk_markdown_file(
+            input_file=md_path,
+            output_file=chunks_path,
+            max_chunk_size=max_chunk_size,
+            overlap_size=overlap_size,
+            min_chunk_size=min_chunk_size,
+            output_format=output_format
+        ):
             print("Markdown chunking completed successfully!")
         else:
             print("Markdown chunking failed!")
